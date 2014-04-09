@@ -1,6 +1,6 @@
 @media screen {
-  * {
-   background: #4f4
+  body, * {
+   background: #93C572 /* http://en.wikipedia.org/wiki/Chartreuse_(color)#Pistachio */
   }
 }
 
