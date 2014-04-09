@@ -1,4 +1,3 @@
-
 /* import core styles | Basis-Stylesheets einbinden */
 @import url(../yaml/core/base.css);
 
@@ -7,7 +6,7 @@
 @import url(../yaml/forms/gray-theme.css);
 
 @import url(../yaml/screen/typography.css);
-@import url(../yaml/screen/screen-PAGE-layout.css);
+@import url(../yaml/screen/screen-PAGE-layout-nocol.css);
 
 /* import print layout | Druck-Layout einbinden */
 @import url(../yaml/print/print.css);
