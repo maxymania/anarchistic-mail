@@ -2,18 +2,34 @@
 layout: default
 title: Home
 ---
+<h1>Introduction</h1>
+<p>Anarchistic Mail (in short A-Mail) is a Project, that makes a set of Protocols for a seperate E-Mail-Like Mail System with Privacy in mind.</p>
+<p>It is a bit similar to Dark Mail, but simpler, and seperate, not complement, to the E-Mail standard.</p>
+<p>That means, that you can't send a A-Mail to an E-Mail-Address, nor an E-Mail to an A-Mail-Address (Though there will be Gateways for this)</p>
 
-
-<h1>Packages</h1>
+<p>One goal is to Provide:</p>
 <ul>
-<li><a href="./gopkg/pull.html">xml.api/pull</a> An StAX-Like XML-Reader Interface for go</li>
-<li><a href="./gopkg/streamxmlp.html">xml.api/streamxmlp</a> An XML Parser, Implements the interface in the package "xml.api/pull"</li>
-<li><a href="./gopkg/push.html">xml.api/push</a> An StAX-Like XML-Writer Interface for go</li>
-<li><a href="./gopkg/sxmlwriter.html">xml.api/sxmlwriter</a> An XML-Writer Implementation for "xml.api/push"</li>
+<li>Full encryption of both text and metadata</li>
+<li>Remailer-like capabilities (Type III)</li>
+<li>Anonymous sending</li>
+<li>Deniability (if wanted)</li>
 </ul>
-<h1>Blog Posts</h1>
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href=".{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+
+<p>Short Term Goals</p>
+<ul>
+<li>Design the Protocols, Formats and Encryption shemes for A-Mail</li>
+<li>Create Reference implementations</li>
+<li>Create an A-Mail client</li>
 </ul>
+
+<p>Long Term Goals</p>
+<ul>
+<li>Create a Gateway (-software) to receive E-Mails with an A-Mail Account.</li>
+<li>Create a Gateway (-software) to send A-Mails to E-Mail-Addresses.</li>
+</ul>
+
+<h1>Protocols</h1>
+<ul>
+<li>... no protocol yet</li>
+</ul>
+
