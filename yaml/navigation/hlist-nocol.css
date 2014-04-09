@@ -1,6 +1,8 @@
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  *
+ * modified by Maxymania (nocol version)
+ *
  * (en) Horizontal list navigation "hlist"
  * (de) Horizontale Navigationsliste "hlist"
  *
@@ -19,7 +21,6 @@
     overflow: hidden;
     position: relative;
     line-height: 1em;
-    background: #222;
   }
   .ym-hlist ul {
     margin: 0;
