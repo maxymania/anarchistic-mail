@@ -35,8 +35,9 @@
    <div class="ym-cbox">
     <h2>Foobar</h2>
 	<ul>
-	 <li><a href="{{site.baseurl}}/">Home</a></li>
-	 
+	 {% for node in site.mypages %}
+	 <li><a href="{{site.baseurl}}{{node.url}}">{{node.name}}</a></li>
+	 {% endfor %}
 	</ul>
    </div>
   </div>

@@ -2,3 +2,6 @@ markdown: rdiscount
 pygments: true
 baseurl: /anarchistic-mail
 title: Anarchistic Mail
+mypages:
+ - name: Home
+   url: /
