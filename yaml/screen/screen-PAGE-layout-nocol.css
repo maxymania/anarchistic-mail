@@ -29,17 +29,10 @@
 
   /* Basic Element Styling */
   header {
-    background: #444;
-    color: #ccc;
     padding: 1.5em;
-  }
-  header h1 {
-    background: transparent;
-    color: #fff;
   }
 
   nav {
-    background: #222222;
   }
 
   main {
@@ -48,8 +41,6 @@
 
   footer {
     margin: 0;
-    background: #eee;
-    color: #444;
     padding: 1.5em;
   }
   footer p {
@@ -95,7 +86,6 @@
   .ym-skiplinks a.ym-skip:focus,
   .ym-skiplinks a.ym-skip:active {
     color: #fff;
-    background: #333;
     border-bottom: 1px #000 solid;
     padding: 10px 0;
     text-align: center;
