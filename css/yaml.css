@@ -2,7 +2,7 @@
 @import url(../yaml/core/base.css);
 
 /* import screen layout | Screen-Layout einbinden */
-@import url(../yaml/navigation/hlist.css);
+@import url(../yaml/navigation/hlist-nocol.css);
 @import url(../yaml/forms/gray-theme.css);
 
 @import url(../yaml/screen/typography.css);
