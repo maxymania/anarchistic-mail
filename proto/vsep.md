@@ -20,6 +20,7 @@ This Document will use the following notation:
 - Secret = **Curve**(Public,Base) for elliptic curve Point Muliplication
 - **Base** is the base Point of the elliptic curve
 - Dest = **XOR**(Source1,Source2,...) XORing something
+- SubKey1,SubKey2 = **Split**(Key) splits the 32-byte key into 16 Bytes Sub keys (1..16,17..32)
 
 ## 2. Handshake
 
@@ -36,14 +37,44 @@ PrivateKey = ChooseRandom(32 bytes)
 
 PublicKey = Curve(PrivateKey,Base)
 
+.
 
 ### 2.2 Encrypted Key Exchange
 
-| > | 32 Bytes |
-| --- | --- |
-| > | Session |
-| > | EDhke1 |
-| > | EDhke2 |
-| > | EInitVec |
+![Encrypted Key Exchange](vsep_ke.png "Encrypted Key Exchange")
 
+OppositePublicKey = the received public key (client or server)
 
+t = ChooseRandom(32 bytes)
+
+EncryptedKey = Curve(t,Base)
+
+Key = Curve(t,OppositePublicKey)
+
+DH_Key_1, DH_Key_2 = curve25519 diffie hellman keys
+
+IV = ChooseRandom(32 bytes)
+
+### 2.3 Cipher Setup
+
+Key_1,Key_2 = shared secrets of the Key exchanges.
+
+IV_1 = Decrypted IV from Encrypted Key Exchange p.1
+
+K1S1,K1S2 = Split(Key_1)
+
+IV1S1,IV1S2 = Split(IV_1)
+
+Stream1 = Setup-AES-ECFB(K1S2,IV1S2,Setup-AES-CTR(K1S1,IV1S1))
+
+IV_2 = Decrypted IV from Encrypted Key Exchange p.2
+
+K2S1,K2S2 = Split(Key_2)
+
+IV2S1,IV2S2 = Split(IV_2)
+
+Stream2 = Setup-AES-ECFB(K2S2,IV2S2,Setup-AES-CTR(K2S1,IV2S1))
+
+The Stream1 SHALL encrypt the Server-To-Client Stream.
+
+The Stream2 SHALL encrypt the Client-To-Server Stream.
