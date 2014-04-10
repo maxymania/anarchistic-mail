@@ -33,45 +33,51 @@ no Key Pair it SHALL generate one.
 
 The key Pair is a Curve25519 Key Pair, defined as
 
-PrivateKey = ChooseRandom(32 bytes)
+<code>PrivateKey = ChooseRandom(32 bytes)</code>
 
-PublicKey = Curve(PrivateKey,Base)
+<code>PublicKey = Curve(PrivateKey,Base)</code>
 
-.
+<br/>
 
 ### 2.2 Encrypted Key Exchange
 
 ![Encrypted Key Exchange](vsep_ke.png "Encrypted Key Exchange")
 
-<code>
-OppositePublicKey = the received public key (client or server)
-t = ChooseRandom(32 bytes)
-EncryptedKey = Curve(t,Base)
-Key = Curve(t,OppositePublicKey)
-DH_Key_1, DH_Key_2 = curve25519 diffie hellman keys
-IV = ChooseRandom(32 bytes)
-</code>
+<code>OppositePublicKey = the received public key (client or server)</code>
+
+<code>t = ChooseRandom(32 bytes)</code>
+
+<code>EncryptedKey = Curve(t,Base)</code>
+
+<code>Key = Curve(t,OppositePublicKey)</code>
+
+<code>DH_Key_1, DH_Key_2 = curve25519 diffie hellman keys</code>
+
+<code>IV = ChooseRandom(32 bytes)</code>
+
+<br/>
 
 ### 2.3 Cipher Setup
 
-Key_1,Key_2 = shared secrets of the Key exchanges.
+<code>Key_1,Key_2 = shared secrets of the Key exchanges.</code>
 
-IV_1 = Decrypted IV from Encrypted Key Exchange p.1
+<code>IV_1 = Decrypted IV from Encrypted Key Exchange p.1</code>
 
-K1S1,K1S2 = Split(Key_1)
+<code>K1S1,K1S2 = Split(Key_1)</code>
 
-IV1S1,IV1S2 = Split(IV_1)
+<code>IV1S1,IV1S2 = Split(IV_1)</code>
 
-Stream1 = Setup-AES-ECFB(K1S2,IV1S2,Setup-AES-CTR(K1S1,IV1S1))
+<code>Stream1 = Setup-AES-ECFB(K1S2,IV1S2,Setup-AES-CTR(K1S1,IV1S1))</code>
 
-IV_2 = Decrypted IV from Encrypted Key Exchange p.2
+<code>IV_2 = Decrypted IV from Encrypted Key Exchange p.2</code>
 
-K2S1,K2S2 = Split(Key_2)
+<code>K2S1,K2S2 = Split(Key_2)</code>
 
-IV2S1,IV2S2 = Split(IV_2)
+<code>IV2S1,IV2S2 = Split(IV_2)</code>
 
-Stream2 = Setup-AES-ECFB(K2S2,IV2S2,Setup-AES-CTR(K2S1,IV2S1))
+<code>Stream2 = Setup-AES-ECFB(K2S2,IV2S2,Setup-AES-CTR(K2S1,IV2S1))</code>
 
 The Stream1 SHALL encrypt the Server-To-Client Stream.
 
 The Stream2 SHALL encrypt the Client-To-Server Stream.
+
