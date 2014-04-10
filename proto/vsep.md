@@ -81,3 +81,10 @@ The Stream1 SHALL encrypt the Server-To-Client Stream.
 
 The Stream2 SHALL encrypt the Client-To-Server Stream.
 
+## 3. Security
+
+The Curve25519-DiffieHellman-Key-Exchange is encrypted using Public Keys.
+Server and Client can use that to prevent a Man-In-The Middle Attack.
+
+Since the encryption key is exchanged using a DiffieHellman-Key-Exchange,
+VSEP offers Perfect forward Secrecy By default.
