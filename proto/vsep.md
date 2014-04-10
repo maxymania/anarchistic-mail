@@ -39,11 +39,11 @@ PublicKey = Curve(PrivateKey,Base)
 
 ### 2.2 Encrypted Key Exchange
 
-| 32 Bytes |
-| --- |
-| Session |
-| EDhke1 |
-| EDhke2 |
-| EInitVec |
+| > | 32 Bytes |
+| --- | --- |
+| > | Session |
+| > | EDhke1 |
+| > | EDhke2 |
+| > | EInitVec |
 
 
