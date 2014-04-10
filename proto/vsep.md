@@ -43,9 +43,9 @@ PublicKey = Curve(PrivateKey,Base)
 
 ![Encrypted Key Exchange](vsep_ke.png "Encrypted Key Exchange")
 
-```
+<code>
+
 OppositePublicKey = the received public key (client or server)
-```
 
 t = ChooseRandom(32 bytes)
 
@@ -56,6 +56,8 @@ Key = Curve(t,OppositePublicKey)
 DH_Key_1, DH_Key_2 = curve25519 diffie hellman keys
 
 IV = ChooseRandom(32 bytes)
+
+</code>
 
 ### 2.3 Cipher Setup
 
