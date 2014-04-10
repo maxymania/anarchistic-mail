@@ -81,6 +81,8 @@ The Stream1 SHALL encrypt the Server-To-Client Stream.
 
 The Stream2 SHALL encrypt the Client-To-Server Stream.
 
+<br/>
+
 ## 3. Security
 
 The Curve25519-DiffieHellman-Key-Exchange is encrypted using Public Keys.
