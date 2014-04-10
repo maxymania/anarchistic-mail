@@ -43,7 +43,9 @@ PublicKey = Curve(PrivateKey,Base)
 
 ![Encrypted Key Exchange](vsep_ke.png "Encrypted Key Exchange")
 
+```
 OppositePublicKey = the received public key (client or server)
+```
 
 t = ChooseRandom(32 bytes)
 
