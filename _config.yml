@@ -1,7 +1,7 @@
 markdown: rdiscount
 pygments: true
 baseurl: /anonym-mail
-title: Anarchistic Mail
+title: Anonymized Mail
 mypages:
  - name: Home
    url: /
