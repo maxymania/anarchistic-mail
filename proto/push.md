@@ -9,9 +9,13 @@ title: PUSH Protocol
 
 The PUSH Protocol is a Protocol, that knows only one Command: PUSH
 
+<br/>
+
 ## 2. The Protocol itself
 
 Every Line is Terminated using CR-LF
+
+<br/>
 
 ## 2.1 The PUSH Command
 
