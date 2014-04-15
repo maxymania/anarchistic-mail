@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SeccoN: Secure Container
+title: Seccon - Secure Container
 ---
 
 # {{ page.title }}
