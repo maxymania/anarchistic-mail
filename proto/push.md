@@ -22,8 +22,12 @@ The typical block-size is 60 Byte per block, wich will result in 80 Base64-Chara
 The Request will be terminated using a <code>"."</code>-Line
 
 <code>C: PUSH</code>
+
 <code>C: thw4xgMKhiFfxBkv+tQ2gWVdhBygXYeHxfHDTfXG/lWSk+wZkLlI+OPAHYk1rJB8AiV3169YqmA2Odvc</code>
+
 <code>C: nIKzNSjzvl5wFBdsQnRhYF+mIkjxk3hFfjcu9vd8jykhpKEWfAjj7O5+EbhTUEuK7yh9cLvCZhCmOStm</code>
+
 <code>C: 142P9uCqZB5EkhMIAxXiuaVpBw==</code>
+
 <code>C: .</code>
 
