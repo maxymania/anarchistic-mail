@@ -9,7 +9,7 @@ title: Mail Relay Message Format
 
 A-Mail Servers Usually implement the [PUSH-Protocol](../proto/push) - A Protocol,
 wich allows a client to push arbitrary blobs to a server - to take queued mails, eighter to resend them (Remailer) or to store them in the MBox of a User/A-Mail-Address.
-These Blobs are Messages encrypted using [Seccon](../scheme/seccon), then they have an specific format to be processed by the Server.
+These Blobs are Messages encrypted using [Seccon](../schemes/seccon), then they have an specific format to be processed by the Server.
 
 <br/>
 
