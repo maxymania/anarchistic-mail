@@ -31,3 +31,5 @@ The Request will be terminated using a <code>"."</code>-Line
 
 <code>C: .</code>
 
+(No Response from the Server side!)
+
