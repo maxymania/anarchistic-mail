@@ -22,7 +22,9 @@ Every Line is Terminated using CR-LF
 The Push Command pushes an octet-stream to the server. The server will not send a response.
 
 The octet-stream will be divided into small blocks and each of this blocks will be send in base64 encoded form as a line.
+
 The typical block-size is 60 Byte per block, wich will result in 80 Base64-Characters.
+
 The Request will be terminated using a <code>"."</code>-Line
 
 <code>C: PUSH</code>
