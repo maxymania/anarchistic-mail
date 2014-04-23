@@ -23,6 +23,8 @@ The Offer Command pushes an 32-bit key to the server. The server will not send a
 
 <code>C: OFFER amail.z28747z.altsubdomain.z64z.mensa.de</code>
 
+<code>C: EXP 2014/02/01_01:00:00</code>
+
 <code>C: l54dxNTrtCzptmZv+f5dOemYawIH5x8MOjukYiJmOOI=</code>
 
 (No Response from the Server side!)

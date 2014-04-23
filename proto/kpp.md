@@ -102,15 +102,15 @@ The typical line-size is 60 Byte per line, wich will result in 80 Base64-Charact
 
 <code>S: CARDS C</code>
 
-<code>S: E7Jmr4CJDJ76cd0DKZhcli9ZZSH7zfNofUnRJHHm9s7iRd13OY8yMkpNxARU4JxXlkxuECTG9OjnYdE7</code>
+<code>S: a8Fw1AIHHUW4irLE7CugW4Q0Q5hEZ6KQng4Jp+WJavYZG0yaO6bqW4Y3kkCIsdcTHwilq6oiQZOa4Sfc</code>
 
-<code>S: isAqh6LS67tQuduJW4wyL5Yk/FZclZ++fE/9wt07nglTkLye7jiB1nLykSIPyRwUxFkSWM296f0rNMip</code>
+<code>S: tbIfLGrb+7y/qxMYtvmhYB9DOWPDiUDcPdhENvVO/ZeBUxFnovnZdgk67prvmN8U4K//4g/iK+L6NYnk</code>
 
 <code>S: ,</code>
 
-<code>S: lTlFpK8Raw7JnawDg2XJ5Qb0p/yC8ASYlE9UBIrEtsOyo8/337diq8QBabty7sB8VeWhg6u21yA45/Rh</code>
+<code>S: oK9UhQgw17rU+9/LxPemMrE/mdzfNXvpumILo+o9FU78x0eXjr0YxZ5ff68qsfR3bNrYdqv1yy/4DuCc</code>
 
-<code>S: IBgJP28KSCj3TnuXFcwHRGHRnadJht64upEgeLP8D08zvQ8ZNje/rmerPJPbk2P/oOHF0dPW4b7pw/Jz</code>
+<code>S: ND0SO+NTquUHnZAqa8EWlKrI5VAyMNke2Xz9uUABUdjIkrqTTrwn/eBICxOkNOHjKcT33jKhXcAs9F01</code>
 
 <code>S: .</code>
 
