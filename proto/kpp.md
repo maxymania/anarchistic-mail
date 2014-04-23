@@ -40,6 +40,7 @@ The prime number that from the [2048-bit MODP Group](http://tools.ietf.org/html/
 <br/>
 
 See also:
+
 - [The Pohlig-Hellman Exponentiation Cipher as a Bridge](http://de.slideshare.net/joshuarbholden/the-pohlighellman-exponentiation-cipher-as-a-bridge-between-classical-and-modern-cryptography)
 - [More Modular Exponential (MODP) Diffie-Hellman groups for Internet Key Exchange (IKE)](http://tools.ietf.org/html/rfc3526) )
 
@@ -57,7 +58,7 @@ The Poker Command Initiates the Poker protocol itself.
 
 The typical line-size is 60 Byte per line, wich will result in 80 Base64-Characters.
 
-<code>C: POKER ?host=~.*\.x64x\.mensa\.de</code>
+<code>C: POKER ?host=~.*\\.x64x\\.mensa\\.de</code>
 
 <code>S: CARDS S</code>
 
